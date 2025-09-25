@@ -7,7 +7,7 @@ body{
 .main-container {
     min-height: 100vh;
     display: grid;
-    grid-template-columns: 400px 1fr;
+    grid-template-columns: minmax(350px, 1fr) 5fr;
     grid-template-rows: 200px 1fr;
 }
 
@@ -15,6 +15,76 @@ header {
     grid-column: 2 / 3;
     grid-row: 1 / 2;
 }
+
+header {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 100px 100px
+}
+
+.header-left {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 100px 100px;
+    grid-row: 1 / 3;
+}
+
+.search-section {
+    display: grid;
+    grid-template-columns: 120px 1fr;
+    grid-column: 1 / 3;
+}
+
+.search-btn {
+    height: 50px;
+    width: 50px;
+    font-size: 20px;
+    font-weight: lighter;
+    justify-self: end;
+    align-self: center;
+    background-color: white;
+    border: none;
+    margin-right: 15px;
+}
+
+.search-input {
+    height: 30px;
+    background-color: #E2E8F0;
+    align-self: center;
+    border-radius: 50px;
+    border-style: none;
+}
+
+.user-info-container {
+    display: grid;
+    grid-template-columns: 170px 1fr;
+    grid-column: 1 / 3;
+}
+
+.user-avatar {
+    height: 100px;
+    width: 100px;
+    grid-row: 2 / 3;
+    grid-column: 1 / 2;
+    justify-self: end;
+}
+
+.user-info {
+    margin-left: 20px;
+    grid-row: 2 / 3;
+    grid-column: 2 / 3;
+}
+
+.user-info {
+    align-items: center;
+}
+
+.header-left img, p, h2 {
+    grid-row: 2 / 3;
+    
+} 
+
+
 
 .sidebar {
     background-color: #1A92D3;
