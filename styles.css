@@ -150,9 +150,69 @@ header {
 }
 
 .sidebar {
+    display: grid;
     background-color: #1A92D3;
     grid-column: 1 / 2;
     grid-row: 1 / 3;
+}
+
+.logo-title-container {
+    height: 100px;
+    display: grid;
+    grid-template-columns: 120px 1fr;
+
+}
+
+.logo-container {
+    display: grid;
+    grid-template-columns: 30px repeat(2, 30px);
+    grid-column-gap: 5px;
+}
+
+.logo {
+    background-color: white;
+}
+
+.left-logo {
+    display: grid;
+    grid-row-gap: 5px;
+    grid-column: 2 / 3;
+}
+
+.right-logo {
+    display: grid;
+    grid-row-gap: 5px;
+    grid-column: 3 / 4;
+}
+
+.logo.one {
+    height: 30px;
+    align-self: end;
+}
+
+.logo.two {
+    height: 20px;
+    align-self: end;
+}
+
+.logo.three {
+    height: 20px;
+    align-self: start;
+}
+
+.logo.four {
+    height: 30px;
+}
+
+.title-container {
+    display: grid;
+}
+
+.title {
+    color: white;
+    align-self: center;
+    margin: 0;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 .main-content {
