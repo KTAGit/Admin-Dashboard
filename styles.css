@@ -292,12 +292,13 @@ header {
 .projects {
     background-color: white;
     width: 450px;
-    height: 250px;
+    height: 255px;
     display: grid;
     grid-template-columns: 20px 1fr;
     grid-template-rows: 60px 150px 1fr;
     border-radius: 10px;
     border-left: #F0B42A 10px solid;
+    box-shadow:  5px 5px 10px -1px #c6c5c5;
 }
 
 .projects h3 {
@@ -326,13 +327,108 @@ header {
 }
 
 .project-icon {
-    font-size: 20px;
+    font-size: 25px;
 }
 
 .announcements {
-    height: 500px;
+    height: 430px;
+    width: 380px;
+    margin-left: 30px;
+}
+
+.Announcements-title {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-top: 40px;
+}
+
+.announcement-container {
+    height: 370px;
+    width: 350px;
+    background-color: white;
+    display: grid;
+    grid-template-columns: 25px 1fr 15px;
+    justify-items: center;
+    border-radius: 10px;
+    box-shadow:  5px 5px 10px -1px #c6c5c5;
+}
+
+.announcement-container div {
+    grid-column: 2 / 3;
+    border-bottom: #cfcdcd 1px solid;
+}
+
+.announcement-container :nth-child(3) {
+    border: none;
+}
+
+.announcement-container div h4 {
+    margin: 0;
+    margin-top: 30px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.announcement-container div p {
+    margin-top: 5px;
+    color: #838181;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 .trending {
    height: 400px; 
+   width: 380px;
+   margin-left: 30px;
+}
+
+.trending-title {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-bottom: 20px;
+}
+
+.trending-container {
+    height: 364px;
+    width: 350px;
+    padding-top: 10px;
+    background-color: white;
+    display: grid;
+    grid-template-columns: 25px 1fr 25px;
+    grid-template-rows: repeat(4, 88px);
+    justify-items: center;
+    border-radius: 10px;
+    box-shadow:  5px 5px 10px -1px #c6c5c5;
+}
+
+.trending-boxes {
+    width: 310px;
+    display: grid;
+    grid-template-columns: 70px 1fr;
+    grid-column: 2 / 3;
+}
+
+.trending-container div img {
+    height: 85px;
+    width: 75px;
+    align-self: center;
+}
+
+.content-detail {
+    width: 250px;
+    align-self: center;
+    
+}
+
+.content-detail p {
+    margin: 0;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #838181;
+    margin-left: 20px;
+}
+
+.content-detail :nth-child(1) {
+    color: #535353;
+    margin-bottom: 5px;
+}
+
+.trending-container :nth-child(2) img {
+    height: 65px;
+    width: 70px;
 }
